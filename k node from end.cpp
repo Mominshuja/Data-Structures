@@ -42,7 +42,7 @@ int find(int k)
 	node *ktemp=head,*ptemp=head;
 	for (int i=0;i<k-1;i++)
 	{
-		if (ptemp == NULL)
+		if (ptemp->next == NULL)
 		{
 			cout<<"k is greater than linked lists";
 			return 0;
@@ -58,7 +58,7 @@ int find(int k)
 		ptemp=ptemp->next;
 		
 	}
-	cout<<endl<<ktemp->data;
+	return ktemp->data;
 }
 int main()
 {
